@@ -40,12 +40,12 @@
 		#size-cells = <1>;
 		compatible = "bluelogic,wbpf1";
 		clocks = <&clkc 15>;
-		reg = <0x43c00000 0x10000 0x7aa00000 0x10000>;
+		reg = <0x43c00000 0x10000 0x7aa00000 0x40000>;
 		interrupt-parent = <&intc>;
 		interrupts = <0 29 4>;
 	};
 
-	wbpf1@43c10000 {
+	/*wbpf1@43c10000 {
 		#address-cells = <1>;
 		#size-cells = <1>;
 		compatible = "bluelogic,wbpf1";
@@ -53,7 +53,7 @@
 		reg = <0x43c10000 0x10000 0x7aa10000 0x10000>;
 		interrupt-parent = <&intc>;
 		interrupts = <0 30 4>;
-	};
+	};*/
 };
 
 &clkc {
